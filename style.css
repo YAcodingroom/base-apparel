@@ -1,0 +1,219 @@
+/* main */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+}
+
+.col-md-7 {
+    background-image: url(./images/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-position: left bottom;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.card-body {
+    margin: 3rem 16rem 0 8.5rem;
+}
+
+.card-title {
+    color: hsl(0, 36%, 70%);
+    font-size: 3.2rem;
+    font-weight: 300;
+    letter-spacing: 18px;
+    margin-top: 7rem;
+    text-transform: uppercase;
+}
+
+.card-title span {
+    color: hsl(0, 6%, 24%);
+    display: block;
+    font-weight: 600;
+}
+
+.card-text {
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    line-height: 2;
+    margin: 1rem 0 1.8rem;
+}
+
+/* submit */
+.submit-content {
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 25px;
+    height: 50px;
+    position: relative;
+}
+
+.submit-content:focus-within {
+    border: 1.5px solid hsl(0, 6%, 24%);
+}
+
+.submit-content input {
+    border: 0;
+    border-radius: 25px;
+    display: inline-block;
+    height: 100%;
+    padding: 0 0 0 1.5rem;
+    width: 100%;
+}
+
+.submit-content input::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+.submit-content input:focus {
+    outline: none;
+}
+
+.submit-content .btn {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px 1px hsl(0, 36%, 70%);
+    height: 104%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: -0.5%;
+    bottom: -2%;
+    width: 20%;
+    z-index: 10;
+}
+
+.submit-content .btn:hover {
+    background: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
+}
+
+/* error */
+.submit-content>img {
+    display: none;
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    z-index: 2;
+}
+
+.error-text {
+    color: hsl(0, 93%, 68%);
+    display: none;
+    font-size: 14px;
+    margin: 0.5rem 1.5rem;
+}
+
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(0, 36%, 70%);
+}
+
+/* responsive */
+@media (max-width:1199px) {
+    .card-body {
+        margin: 3rem 10rem 0 6rem;
+    }
+
+    .card-title {
+        font-size: 2.8rem;
+        margin-top: 3rem;
+    }
+
+    .card-text {
+        line-height: 1.8;
+        margin: 1rem 0 1.2rem;
+    }
+}
+
+@media (max-width:991px) {
+    .card-body {
+        margin: 2rem 4rem 0;
+    }
+
+    .card-title {
+        font-size: 2.2rem;
+        margin-top: 2rem;
+    }
+
+    .card-text {
+        line-height: 1.2;
+        margin: 1rem 0;
+    }
+
+    .submit-content {
+        height: 40px;
+    }
+
+    .submit-content>img {
+        top: 20%;
+    }
+    .col-md-7 {
+        background-image: none;
+    }
+}
+
+@media (max-width:767px) {
+    .logo>img {
+        display: block;
+        margin: 2rem 4rem;
+    }
+
+    .mobile-img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    .col-md-5 > img {
+        display: none;
+    }
+
+    .card-body {
+        margin: 0;
+    }
+
+    .card-title {
+        font-size: 2rem;
+        margin: 3rem 4rem 0;
+        text-align: center;
+    }
+
+    .card-text {
+        line-height: 2;
+        margin: 3rem 4rem 0;
+    }
+
+    .submit-content {
+        height: 50px;
+        margin: 3rem 4rem 0;
+    }
+
+    /* error */
+    .error-text {
+        margin: 0.5rem 4rem;
+    }
+}
+@media (max-width:576px) {
+    .logo>img {
+        margin: 2rem 4rem;
+    }
+
+    .card-title {
+        font-size: 2rem;
+        margin: 3rem 4rem 0;
+        text-align: center;
+    }
+
+    .card-text {
+        margin: 2rem 4rem 0;
+    }
+
+    .submit-content {
+        margin: 2rem 4rem 0;
+    }
+}
